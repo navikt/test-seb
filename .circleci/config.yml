@@ -55,13 +55,13 @@ workflows:
           context: barkendeploy
           requires:
             - build
-  test_branch:
-    unless: << pipeline.parameters.deploy_branch >>
-    jobs:
-      - run_tests:
-          filters:
-            branches:
-              ignore: master
+#  test_branch:
+#    unless: << pipeline.parameters.deploy_branch >>
+#    jobs:
+#      - run_tests:
+#          filters:
+#            branches:
+#              ignore: master
   build_branch:
     when: << pipeline.parameters.deploy_branch >>
     jobs:
