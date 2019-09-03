@@ -1,10 +1,10 @@
 const express = require("express");
 
-const PORT = 8080;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 
 const app = express();
-app.get('/', (req, res) => {
+app.get('/test-seb', (req, res) => {
     res.send('Hello world');
 });
 
