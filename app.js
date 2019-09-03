@@ -10,5 +10,3 @@ app.get('/test-seb', (req, res) => {
 
 app.listen(PORT, HOST);
 console.log(`Running server on port ${PORT}`);
-
-//test
